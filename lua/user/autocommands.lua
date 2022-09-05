@@ -31,7 +31,7 @@ vim.cmd [[
   
   augroup _auto_format
     autocmd!
-    autocmd BufWritePre * lua vim.lsp.buf.formatting()
+    autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()
   augroup end
 ]]
 -- Autoformat
